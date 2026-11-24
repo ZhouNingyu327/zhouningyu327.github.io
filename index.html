@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zhou Ningyu, a second-year physics undergraduate at Peking University. Interests in artificial intelligence, physical simulation, and embodied AI.">
+  <meta name="theme-color" content="#111721">
+  <title>Zhou Ningyu | Academic Homepage</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #111721;
+      --heading: #eef1f7;
+      --text: #c0c9d8;
+      --accent: #acbdf5;
+      --rule: #323d50;
+      font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+      line-height: 1.75;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--text); }
+    h1, h2, h3, p { margin: 0; }
+    a { color: var(--accent); text-underline-offset: 0.22em; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .wrap { width: min(780px, calc(100% - 64px)); margin-inline: auto; }
+    .skip { position: fixed; z-index: 2; top: 12px; left: 12px; padding: 8px 14px; background: var(--background); transform: translateY(-175%); }
+    .skip:focus { transform: none; }
+    .masthead { padding-block: clamp(48px, 10vw, 106px) clamp(30px, 5vw, 52px); border-top: 3px solid var(--accent); }
+    .profile { display: flex; align-items: center; gap: clamp(20px, 4.5vw, 38px); }
+    .profile-details { min-width: 0; }
+    .portrait { width: clamp(96px, 16vw, 144px); aspect-ratio: 1; flex: none; border: 1px solid var(--rule); border-radius: 50%; overflow: hidden; }
+    .portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 45%; transform: scale(1.55); }
+    h1, h2 { color: var(--heading); font-family: Georgia, "Times New Roman", serif; font-weight: 600; }
+    h1 { font-size: clamp(2.9rem, 7.7vw, 5.3rem); line-height: 1.1; letter-spacing: -0.046em; }
+    .affiliation { margin-top: 13px; color: var(--accent); font-size: clamp(1rem, 2.3vw, 1.16rem); }
+    .contact { margin-top: 5px; font-size: 1rem; overflow-wrap: anywhere; }
+    main { border-top: 1px solid var(--rule); padding-bottom: clamp(52px, 10vw, 94px); }
+    main section { padding-top: clamp(28px, 5.4vw, 49px); }
+    main section + section { margin-top: clamp(28px, 5.4vw, 49px); border-top: 1px solid var(--rule); }
+    h2 { font-size: clamp(1.78rem, 4vw, 2.45rem); line-height: 1.23; letter-spacing: -0.023em; margin-bottom: 19px; }
+    main h3 { color: var(--heading); font-size: 1.125rem; font-weight: 600; }
+    main p { max-width: 64ch; font-size: clamp(1rem, 2.4vw, 1.125rem); }
+    main p + p { margin-top: 15px; }
+    .project-role { margin-top: 3px; font-size: 1rem; }
+    .project-role + p { margin-top: 6px; }
+    .education-entry { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 3px; }
+    .education-entry p { font-size: 1rem; white-space: nowrap; }
+    @media (max-width: 550px) {
+      .wrap { width: calc(100% - 40px); }
+    }
+    @media (max-width: 500px) {
+      .profile { flex-direction: column; align-items: flex-start; gap: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="wrap profile">
+      <div class="portrait">
+        <img src="portrait.jpg" width="1204" height="1597" alt="Portrait of Zhou Ningyu">
+      </div>
+      <div class="profile-details">
+        <h1>Zhou Ningyu</h1>
+        <p class="affiliation">School of Physics, Peking University</p>
+        <p class="contact"><a href="mailto:nyzhou25@stu.pku.edu.cn">nyzhou25@stu.pku.edu.cn</a></p>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section aria-labelledby="about">
+      <h2 id="about">About Me</h2>
+      <p>I am a second-year undergraduate studying physics at Peking University and a research intern working with <a href="https://yiwuzhong.notion.site/homepage">Prof. Yiwu Zhong</a>. I am interested in artificial intelligence and physical simulation, especially how computational models can capture the behavior of physical systems.</p>
+      <p>I currently follow work on how generative models can build simulated environments. I am also interested in embodied AI, particularly how agents learn to interact with their surroundings and adapt when conditions change.</p>
+    </section>
+    <section aria-labelledby="projects">
+      <h2 id="projects">Selected Projects</h2>
+      <article>
+        <h3><a href="https://real2simhub.github.io/">Real2SimHub</a></h3>
+        <p class="project-role">Contributor · PKU-VaLuE Lab</p>
+        <p>An open-source initiative for real-to-simulation research that brings together Real2SimLab, a platform for running and evaluating methods, and Awesome-Real2Sim, a curated research map.</p>
+      </article>
+    </section>
+    <section class="education" aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <div class="education-entry">
+        <h3>Peking University</h3>
+        <p><time datetime="2025">2025</time>–</p>
+      </div>
+      <p>School of Physics · Second-year undergraduate</p>
+    </section>
+  </main>
+</body>
+</html>
