@@ -33,7 +33,7 @@
     h1, h2 { color: var(--heading); font-family: Georgia, "Times New Roman", serif; font-weight: 600; }
     h1 { font-size: clamp(2.9rem, 7.7vw, 5.3rem); line-height: 1.1; letter-spacing: -0.046em; }
     .affiliation { margin-top: 13px; color: var(--accent); font-size: clamp(1rem, 2.3vw, 1.16rem); }
-    .contact { margin-top: 5px; font-size: 1rem; overflow-wrap: anywhere; }
+    .contact { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 5px; font-size: 1rem; overflow-wrap: anywhere; }
     main { border-top: 1px solid var(--rule); padding-bottom: clamp(52px, 10vw, 94px); }
     main section { padding-top: clamp(28px, 5.4vw, 49px); }
     main section + section { margin-top: clamp(28px, 5.4vw, 49px); border-top: 1px solid var(--rule); }
@@ -63,7 +63,10 @@
       <div class="profile-details">
         <h1>Zhou Ningyu</h1>
         <p class="affiliation">School of Physics, Peking University</p>
-        <p class="contact"><a href="mailto:nyzhou25@stu.pku.edu.cn">nyzhou25@stu.pku.edu.cn</a></p>
+        <p class="contact">
+          <a href="mailto:nyzhou25@stu.pku.edu.cn">nyzhou25@stu.pku.edu.cn</a>
+          <a href="https://github.com/ZhouNingyu327">GitHub</a>
+        </p>
       </div>
     </div>
   </header>
